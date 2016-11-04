@@ -1,0 +1,11 @@
+{
+  "globalDependencies": {
+    "elastic.js": "registry:dt/elastic.js#1.2.0+20160907114437",
+    "elasticsearch": "registry:dt/elasticsearch#0.0.0+20160928140154",
+    "node": "registry:dt/node#6.0.0+20161019125345"
+  },
+  "dependencies": {
+    "koa": "registry:npm/koa#2.0.0+20161018080506",
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725"
+  }
+}

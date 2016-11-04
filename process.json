@@ -1,0 +1,32 @@
+{
+  "apps" : [{
+    // General
+    "name": "americano-hevb-api",
+    "script": "index.js",
+    "interpreter_args": "--harmony",
+    "node_args": "",
+    // Advanced features
+    "instances": 0,
+    "exec_mode": "cluster",
+    "watch": "true",
+    "ignoreWatch" : ["[\\/\\\\]\\./", "node_modules"],
+    "max_memory_restart": "400M",
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_test": {
+      "NODE_ENV": "test",
+      "PORT": "23000"
+    },
+    "env_production": {
+      "NODE_ENV": "production",
+      "PORT": "23000"
+    },
+    // Log files
+    "log_date_format"  : "YYYY-MM-DD HH:mm:ss",
+    "out_file": "./logs/pm2-out.log",
+    "error_file": "./logs/pm2-err.log",
+    "pid_file": "./logs/site.pid",
+    "merge_logs": true
+  }]
+}
